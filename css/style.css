@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+@media screen and (min-width:480px) {
+    body {
+        width: 100%;
+        background-color: lightcoral;
+    }
+    
+    #wrapper {
+        width: 1000px;
+        background-color: white;
+        margin: 0 auto;
+    }
+    
+    /* ---------------- ヘッダー --------------------- */
+    header {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: solid 2px lightcoral;
+        margin-top: 10px;
+    }
+    
+    div#university {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    
+    div#renraku {
+        margin-left: 520px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    
+    /* --------------- 写真 ナビゲーション -------------------- */
+    #picture {
+        position: relative;
+        margin-top: 30px;
+        margin-right: 400px;
+        margin-left: 300px;
+    }
+    
+    #picture img {
+        position: absolute;
+        width: 400px;
+    }
+    
+    /* ---------------- ナビゲーション文章 -------------------------- */
+    div#shoukai {
+        margin-top: 350px;
+        margin-left: 30px;
+    }
+    
+    /* -------------- ナビゲーション ------------------ */
+    .gnav {
+        display: flex;
+        height: 2rem;
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    .gnav > li {/*親階層のみ幅を33%にする*/
+        width: 33%;
+    }
+    
+    /*全てのリスト・リンク共通*/
+    .gnav li {
+        list-style: none;
+        position: relative;
+    }
+
+    .gnav li a {
+        background: lightskyblue;
+        border-right: 1px solid #eee;
+        color: #fff;
+        display: block;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    /*子階層以降共通*/
+    .gnav li li {
+        height: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .gnav li li a {
+        border-top: 1px solid #eee;
+    }
+
+    .gnav li:hover > ul > li {
+        height: 2rem;
+        overflow: visible;
+    }
+    
+    /* ---------------------- テーブルタグ ------------------------------ */
+    #information {
+        display: flex;
+        margin-bottom: 80px;
+    }
+    
+    #gakuhi {
+        margin-top: 25px;
+        width: 45%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    
+    div#money {
+        margin-right: 100px;
+    }
+    
+    #news {
+        margin-top: 25px;
+        width: 45%;
+    }
+    
+    div#sintyaku {
+        margin-bottom: 20px;
+        margin-left: 70px;
+    } 
+    
+    table#hiyou {
+        caption-side: bottom;
+        border-collapse: collapse;
+        border: solid 1px black;
+        margin-left: 30px;
+        width: 125%;
+    }
+
+    table#hiyou tbody tr th {
+        width: 35%;
+        border-bottom: solid 1px black;
+        padding: 6px;
+        text-align: center;
+    }
+
+    table#hiyou tbody tr td {
+        width: 35%;
+        border-bottom: solid 1px black;
+        padding: 6px;
+    }
+    
+    table#jouhou {
+        caption-side: bottom;
+        border-collapse: collapse;
+        border: solid 1px black;
+        margin-left: 60px;
+    }
+    
+    table#jouhou tbody tr th {
+        width: 45%;
+        border-bottom: solid 1px black;
+        padding: 6px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    table#jouhou tbody tr td {
+        width: 45%;
+        border-bottom: solid 1px black;
+        padding: 6px;
+        white-space: nowrap;
+    }
+    
+    /* -------------------- フッター --------------------------------- */
+    footer {
+        border-top: solid 2px blue;
+        background-color: lightblue;
+    }
+    
+    div#boshu {
+        font-size: 25px;
+        margin-right: 370px;
+        margin-top: 30px;
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    
+    div#tizu {
+        margin-left: 600px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    div#map {
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        margin-left: 600px;
+    }
+    
+    div#map iframe {
+        width: 400px;
+        height: 400px;
+        margin-top: -150px;
+    }
+    
+    /* --------------- 医療経営学部 ----------------------- */
+    #jimu {
+        margin-top: 50px;
+        margin-left: 30px;
+        border-bottom: solid 1px blue;
+        width: 10%;
+    }
+
+    /*  ---------------- 学部の説明 ------------------------- */
+    .explain {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        border: solid 1px blue;
+        padding: 5px;
+    }
+
+    /* --------------- 機能回復学部 ----------------------- */
+    #iryou {
+        margin-top: 30px;
+        margin-left: 30px;
+        border-bottom: solid 1px blue;
+        width: 10%;
+    }
+
+    /* --------------- 理学療法学科 ------------------- */
+    #pt {
+        margin-top: 30px;
+        margin-left: 30px;
+        border-bottom: solid 1px blue;
+        width: 10%;
+    }
+
+    /* --------------- 作業療法学科 ------------------- */
+    #ot {
+        margin-top: 30px;
+        margin-left: 30px;
+        border-bottom: solid 1px blue;
+        width: 10%;
+    }
+
+    /* --------------- 医療工学部 ------------------- */
+    #material {
+        margin-top: 30px;
+        margin-left: 30px;
+        border-bottom: solid 1px blue;
+        width: 10%;
+    }
+
+    /* ------------- スクロールイベント ------------- */
+    .btn {
+        background-color: aquamarine;
+        color: black;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+    }
+
+}
+
